@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="stocksApp" ng-controller="StockCtrl" class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1>Stock Watchlist</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <form action="/ui/login" method="post">
+                        <div class="form-group">
+                            <label for="usernameInput">User</label>
+                            <input type="text" class="form-control" name="username" placeholder="Enter username"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordInput">Password</label>
+                            <input type="password" class="form-control" name="password" />
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
